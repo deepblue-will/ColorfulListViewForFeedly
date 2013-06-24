@@ -4,9 +4,11 @@ var base_hover_style = "div[colored='source_title']:hover { background-color: hs
 var applied_color_attr = []
 
 $(function() {
-	setInterval(function() {
-		setColorAttr();
-	}, 500);
+	document.addEventListener('webkitAnimationStart', function(event){
+		if(event.animationName == 'elementInserted'){
+			setColorAttr();
+		}
+	}, true);
 });
 /** Feedにカラーを適用 */
 function setColorAttr() {

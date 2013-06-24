@@ -3,7 +3,7 @@
 
 	"name": "Colorful List View for Feedly",
 	"description": "Feedlyの一覧をFeedごとに色分けします。",
-	"version": "1.0",
+	"version": "0.1",
 	"content_scripts": [
 		{
 			"matches": ["http://cloud.feedly.com/*"],
@@ -11,10 +11,5 @@
 			"js": ["js/jquery.js", "js/content_script.js"],
 			"run_at": "document_end"
 		}
-	],
-	"icons": {
-		"16": "img/icon16.png",
-		"48": "img/icon48.png",
-		"128": "img/icon128.png"
-	}
+	]
 }
